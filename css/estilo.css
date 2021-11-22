@@ -1,0 +1,507 @@
+
+
+
+
+/*estilo Mobile */
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    body{
+        background-image: url(/assents/img/1234.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .gridconteinerpadre{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 200px 300px;
+        gap: 20px;
+    }
+    .gridconteinerpadre{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        
+    }
+    header{
+        grid-area: header;
+    }
+    nav{
+        grid-area: nav;
+    }
+    
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    
+    .contenedor4 { border-top: 2px solid black;
+       
+    }
+    .contenedor2{
+        display: flex; 
+        flex-direction: row;
+        
+        
+        flex-wrap: wrap;
+        justify-content: flex-end;
+       
+      
+    
+    }
+    .contenedor3{
+        display: grid;
+        margin-right: 40px;
+    
+    }
+    .contenedor4{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin-right: 40px;
+    }
+    
+    
+    
+    /*Menu*/
+    
+    
+    
+    
+    .gridhijo2{
+        margin-right: 20px;
+        list-style: none;
+        
+    }
+    .gridhijo3{
+        margin-right: 20px;
+        list-style: none;
+    }
+    .logo{
+        margin: 20px;
+        margin-left: 5px;
+        
+        
+    }
+    .logo img{
+        width: 100px;
+        
+    
+    }
+    
+    
+    li{
+        padding-right: 15px;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 10px;
+        
+        
+    }
+    .contenedor2 li a {
+        color: white;
+    }
+    
+    .inicio{
+        background-color: rgb(0, 0, 0);
+        padding-top: 4px;
+        
+        
+    }
+    .producto{
+        background-color: rgb(0, 0, 0);
+        padding-top: 4px;
+        
+    }
+    .contacto{
+        background-color: rgb(0, 0, 0);
+        padding-top: 4px;
+        
+    }
+    .nosotros{
+        background-color: rgb(0, 0, 0);
+        padding-top: 4px;
+        
+    
+    }
+    .carrito{
+        background-color: rgb(0, 0, 0);
+        margin-right: 8px;
+        
+    }
+    
+    .inicio2, .producto2, .contacto2, .nosotros2{
+       margin-top: 20px;
+        
+    }
+    .redes1, .redes2, .redes3, .redes4{
+        margin-top: 20px;
+    }
+    a{
+       color: black;
+       text-align: center;
+       text-decoration: none;
+       
+    }
+    .redes{
+        width: 15px;
+    }
+    
+    
+    /*grid main*/
+    .gridgarras {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto ;
+        
+    }
+    .garras img {
+        width: 100px;
+        margin: 25px;
+        
+    }
+    
+    p{
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    /*img*/
+    
+    .imgcarrito{
+        width: 25px;
+    }
+    
+    
+    
+    
+    
+    
+    /* ESTILO CSS PRODUCTO*/
+    .garras2 {
+        width: 280px;
+        height: 230px;
+        margin: 15px;
+    }
+    .gridgarras2{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto ;
+        
+    
+    }
+    .mani, .girasol, .almendra, .nuez, .manisal, .girasolsal, .nuezsal, .almendrasal,
+    .caja1, .caja2, .caja3, .caja4, .caja5, .caja6 {
+        text-align: center;
+        font-family: monospace;
+        font-size: 15px;
+    
+    }
+    
+    /*Estilo Nosotros*/
+    .imgnosotros{
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+         
+    }
+    
+    .bocado1, .bocado2, .bocado3, .bocado4, .bocado5{
+        width: 200px;
+    }
+    
+    .nosotros1{
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+       
+    }
+    .mapa{
+        margin-left: 20px;
+    }
+    
+    
+    /*estilo contacto*/
+    .box-redes a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 40px;
+    
+    }
+    .redes5{
+        width: 20px;
+    }
+    .tituloredes, .mayorista{
+        margin-left: 40px;
+    }
+    
+    .formu, .formu1, .formu2, .formu3{
+        
+        padding: 10px;
+        margin: 10px;
+        margin-left: 40px;
+    
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body{
+        background-image: url(/assents/img/1234.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .gridconteinerpadre{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 200px 300px;
+        gap: 20px;
+    }
+    .gridconteinerpadre{
+        display: grid;
+        grid-template-areas: 
+        "header nav nav"
+        
+        "main main main"
+        "footer footer footer";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto;
+        
+    }
+    header{
+        grid-area: header;
+    }
+    nav{
+        grid-area: nav;
+    }
+    
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    
+    .contenedor4 { border-top: 2px solid black;
+       
+    }
+    .contenedor2{
+        display: flex; 
+        flex-direction: row;
+        padding-top: 160px;
+        
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-right: 40px;
+        
+        margin-top: -17px;
+        margin-bottom: 23px;
+    
+    }
+    .contenedor3{
+        display: grid;
+        margin-right: 40px;
+    
+    }
+    .contenedor4{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin-right: 40px;
+    }
+    
+    
+    
+    /*Menu*/
+    
+    
+    
+    
+    .gridhijo2{
+        margin-right: 20px;
+        list-style: none;
+        
+    }
+    .gridhijo3{
+        margin-right: 20px;
+        list-style: none;
+    }
+    .logo{
+        margin: 20px;
+        margin-left: 50px;
+        
+        
+    }
+    .logo img{
+        width: 214px;
+    
+    }
+    
+    li{
+        padding-right: 15px;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        
+        
+    }
+    .contenedor2 li a {
+        color: white;
+    }
+    
+    .inicio{
+        background-color: rgb(0, 0, 0);
+        padding-top: 4px;
+        margin-left: -162px;
+        padding-left: 490px;
+        
+    }
+    .producto{
+        background-color: rgb(0, 0, 0);
+        padding-top: 4px;
+        
+    }
+    .contacto{
+        background-color: rgb(0, 0, 0);
+        padding-top: 4px;
+        
+    }
+    .nosotros{
+        background-color: rgb(0, 0, 0);
+        padding-top: 4px;
+        
+    
+    }
+    .carrito{
+        background-color: rgb(0, 0, 0);
+        
+    }
+    
+    .inicio2, .producto2, .contacto2, .nosotros2{
+       margin-top: 20px;
+        
+    }
+    .redes1, .redes2, .redes3, .redes4{
+        margin-top: 20px;
+    }
+    a{
+       color: black;
+       text-align: center;
+       text-decoration: none;
+       
+    }
+    .redes{
+        width: 15px;
+    }
+    
+    
+    /*grid main*/
+    .gridgarras {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: auto ;
+        
+    }
+    .garras img {
+        width: 200px;
+        margin: 25px;
+        
+    }
+    
+    p{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    /*img*/
+    
+    .imgcarrito{
+        width: 25px;
+    }
+    
+    
+    
+    
+    
+    
+    /* ESTILO CSS PRODUCTO*/
+    .garras2 {
+        width: 280px;
+        height: 230px;
+        margin: 15px;
+    }
+    .gridgarras2{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto ;
+        
+    
+    }
+    .mani, .girasol, .almendra, .nuez, .manisal, .girasolsal, .nuezsal, .almendrasal,
+    .caja1, .caja2, .caja3, .caja4, .caja5, .caja6 {
+        text-align: center;
+        font-family: monospace;
+        font-size: 15px;
+    
+    }
+    
+    /*Estilo Nosotros*/
+    .imgnosotros{
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+         
+    }
+    
+    .bocado1, .bocado2, .bocado3, .bocado4, .bocado5{
+        width: 200px;
+    }
+    
+    .nosotros1{
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+       
+    }
+    .mapa{
+        margin-left: 20px;
+    }
+    
+    
+    /*estilo contacto*/
+    .box-redes a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 40px;
+    
+    }
+    .redes5{
+        width: 20px;
+    }
+    .tituloredes, .mayorista{
+        margin-left: 40px;
+    }
+    
+    .formu, .formu1, .formu2, .formu3{
+        
+        padding: 10px;
+        margin: 10px;
+        margin-left: 40px;
+    
+    }
+
+}
