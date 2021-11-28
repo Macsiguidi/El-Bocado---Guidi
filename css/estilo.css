@@ -2,7 +2,7 @@
 
 
 
-/*estilo Mobile */
+/*estilo Mobile*/
 @media only screen and (min-width: 360px) and (max-width: 768px){
     body{
         background-image: url(/assents/img/1234.jpg);
@@ -423,7 +423,7 @@
     }
     .garras img {
         width: 200px;
-        margin: 25px;
+       
         
     }
     
