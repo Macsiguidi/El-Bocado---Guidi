@@ -361,9 +361,12 @@
         text-align: center;
         margin-top: 10px;
         font-size: 18px;
-        
-        
+        transition: font-size 1s;
     }
+    li:hover{
+        font-size: 20px;
+    }
+
     .contenedor2 li a {
         color: white;
     }
@@ -413,7 +416,10 @@
         width: 15px;
     }
     .mani {
-        transform: scale(-1,-1);
+       transition: transform 1s;
+    }
+    .mani:hover{
+        transform: scale(-1,-1)
     }
     
     /*grid main*/
@@ -447,11 +453,7 @@
         width: 25px;
     }
     
-    .texto1{
-        transform: translate(10px,50px);
-        transform: rotate(30deg);
-
-    }
+ 
     
     
     
