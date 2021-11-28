@@ -412,7 +412,9 @@
     .redes{
         width: 15px;
     }
-    
+    .mani {
+        transform: scale(-1,-1);
+    }
     
     /*grid main*/
     .gridgarras {
@@ -424,13 +426,19 @@
     .garras img {
         width: 200px;
         margin: 25px;
+        transition: width 1s;
         
+    }
+    .garras img:hover{
+        width: 220px;
+
     }
     
     p{
         text-align: center;
         font-size: 30px;
         font-weight: bold;
+        
     }
     
     /*img*/
@@ -439,7 +447,11 @@
         width: 25px;
     }
     
-    
+    .texto1{
+        transform: translate(10px,50px);
+        transform: rotate(30deg);
+
+    }
     
     
     
