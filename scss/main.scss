@@ -4,6 +4,10 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
+    background-image: url(/assents/img/elruso.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     a img{
         width: 200px;
     }
