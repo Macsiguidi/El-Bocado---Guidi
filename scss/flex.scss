@@ -1,0 +1,10 @@
+.menunav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.menuredes2{
+    @extend .menunav;
+    justify-content: center;
+}
