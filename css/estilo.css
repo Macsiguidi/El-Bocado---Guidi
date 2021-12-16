@@ -22,7 +22,36 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: auto; }
 
-.menunav, .menuredes2 {
+.boximagen {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto; }
+  .boximagen .boximagen2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto; }
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .gridcontainerpadre {
+    display: grid;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 10px; }
+  .header {
+    grid-area: header; }
+  .nav {
+    grid-area: nav; }
+  .main {
+    grid-area: main; }
+  .footer {
+    grid-area: footer; }
+  .header {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto; } }
+
+.menunav, .menuredes, .menuredes2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -31,37 +60,283 @@
 .menuredes2 {
   justify-content: center; }
 
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .menunavmob {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .menuredesmob {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .menuredesmob2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; } }
+
 .header {
-  background-image: url(/assents/img/elruso.jpeg);
+  background-image: url(/assents/img/elbocadogarras2.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 400px; }
   .header a img {
-    width: 200px;
-    margin-left: 60px; }
+    width: 150px;
+    margin-left: 150px;
+    margin-top: 10px; }
 
-.instagram {
-  width: 20px;
-  border-radius: 20px;
-  background-color: #bb46bb; }
+.menuredes {
+  list-style: none;
+  margin-top: 30px;
+  margin-right: 110px; }
+  .menuredes li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .menuredes a .instagram {
+    color: white;
+    border-radius: 20px;
+    background-color: #a756a7;
+    padding: 10px;
+    transition: background-color 0.5s; }
+  .menuredes .instagram:hover {
+    background-color: #752175; }
+  .menuredes a .twitter {
+    color: white;
+    border-radius: 20px;
+    background-color: #248cd1;
+    padding: 10px;
+    transition: background-color 0.5s; }
+  .menuredes .twitter:hover {
+    background-color: #185781; }
+  .menuredes a .whatsapp {
+    color: white;
+    border-radius: 20px;
+    background-color: #46b462;
+    padding: 10px;
+    transition: background-color 0.5s; }
+  .menuredes .whatsapp:hover {
+    background-color: #0e7224; }
+  .menuredes a .email {
+    color: white;
+    border-radius: 20px;
+    background-color: #dd4c4c;
+    padding: 10px;
+    transition: background-color 0.5s; }
+  .menuredes .email:hover {
+    background-color: #a81111; }
 
 .nav {
-  background-color: #308a6c;
+  background-color: #377e88;
   padding-top: 10px; }
+  .nav .menunav, .nav .menuredes, .nav .menuredes2 {
+    margin-top: 0px;
+    margin-right: 120px; }
+    .nav .menunav li, .nav .menuredes li, .nav .menuredes2 li {
+      list-style: none;
+      margin-right: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+      .nav .menunav li a, .nav .menuredes li a, .nav .menuredes2 li a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Readex Pro', sans-serif; }
+        .nav .menunav li a .carrito, .nav .menuredes li a .carrito, .nav .menuredes2 li a .carrito {
+          border-radius: 20px;
+          background-color: black;
+          padding: 10px;
+          transition: background-color 0.5s;
+          margin-top: -8px; }
+        .nav .menunav li a .carrito:hover, .nav .menuredes li a .carrito:hover, .nav .menuredes2 li a .carrito:hover {
+          background-color: #777777; }
 
-.menunav li, .menuredes2 li {
+.main .texto1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Readex Pro', sans-serif; }
+
+.main .boximagen img {
+  width: 600px;
+  height: 600px;
+  margin-left: 90px; }
+
+.main .boximagen2 img {
+  width: 400px;
+  height: 300px; }
+
+.footer {
+  background-color: #308a6c; }
+
+.logo2 {
+  width: 150px;
+  margin-left: 560px; }
+
+.menuredes2 {
   list-style: none;
-  margin-right: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px; }
-  .menunav li a, .menuredes2 li a {
-    text-decoration: none;
-    color: white; }
-    .menunav li a img, .menuredes2 li a img {
-      width: 20px;
-      border-radius: 30px;
-      background-color: #972197; }
+  margin-top: 20px; }
+  .menuredes2 li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .menuredes2 a .instagram {
+    color: white;
+    border-radius: 20px;
+    background-color: #a756a7;
+    padding: 10px;
+    transition: background-color 0.5s; }
+  .menuredes2 .instagram:hover {
+    background-color: #752175; }
+  .menuredes2 a .twitter {
+    color: white;
+    border-radius: 20px;
+    background-color: #248cd1;
+    padding: 10px;
+    transition: background-color 0.5s; }
+  .menuredes2 .twitter:hover {
+    background-color: #185781; }
+  .menuredes2 a .whatsapp {
+    color: white;
+    border-radius: 20px;
+    background-color: #46b462;
+    padding: 10px;
+    transition: background-color 0.5s; }
+  .menuredes2 .whatsapp:hover {
+    background-color: #0e7224; }
+  .menuredes2 a .email {
+    color: white;
+    border-radius: 20px;
+    background-color: #dd4c4c;
+    padding: 10px;
+    transition: background-color 0.5s; }
+  .menuredes2 .email:hover {
+    background-color: #a81111; }
 
-.menuredes2 li {
-  margin: 20px; }
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .header {
+    background-image: url(/assents/img/elruso.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .header a img {
+      width: 100px;
+      margin-left: 125px; }
+  .menuredes {
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px; }
+    .menuredes li {
+      list-style: none;
+      margin-right: 30px;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    .menuredes a .instagram {
+      color: white;
+      border-radius: 20px;
+      background-color: #a756a7;
+      padding: 10px;
+      transition: background-color 0.5s; }
+    .menuredes .instagram:hover {
+      background-color: #752175; }
+    .menuredes a .twitter {
+      color: white;
+      border-radius: 20px;
+      background-color: #248cd1;
+      padding: 10px;
+      transition: background-color 0.5s; }
+    .menuredes .twitter:hover {
+      background-color: #185781; }
+    .menuredes a .whatsapp {
+      color: white;
+      border-radius: 20px;
+      background-color: #46b462;
+      padding: 10px;
+      transition: background-color 0.5s; }
+    .menuredes .whatsapp:hover {
+      background-color: #0e7224; }
+    .menuredes a .email {
+      color: white;
+      border-radius: 20px;
+      background-color: #dd4c4c;
+      padding: 10px;
+      transition: background-color 0.5s; }
+    .menuredes .email:hover {
+      background-color: #a81111; }
+  .nav {
+    background-color: #308a6c;
+    padding-top: 10px; }
+    .nav .menunav, .nav .menuredes, .nav .menuredes2 {
+      margin-top: 0px; }
+      .nav .menunav li, .nav .menuredes li, .nav .menuredes2 li {
+        list-style: none;
+        margin-right: 20px;
+        font-size: 10px;
+        font-weight: bold;
+        margin-bottom: 10px; }
+        .nav .menunav li a, .nav .menuredes li a, .nav .menuredes2 li a {
+          text-decoration: none;
+          color: white; }
+          .nav .menunav li a .carrito, .nav .menuredes li a .carrito, .nav .menuredes2 li a .carrito {
+            border-radius: 20px;
+            background-color: black;
+            padding: 10px;
+            transition: background-color 0.5s;
+            margin-top: -8px; }
+          .nav .menunav li a .carrito:hover, .nav .menuredes li a .carrito:hover, .nav .menuredes2 li a .carrito:hover {
+            background-color: #777777; }
+  .footer {
+    background-color: #308a6c; }
+  .logo2 {
+    width: 100px;
+    margin-left: 125px;
+    margin-top: 10px; }
+  .menuredes2 {
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px; }
+    .menuredes2 li {
+      list-style: none;
+      margin-right: 20px;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    .menuredes2 a .instagram {
+      color: white;
+      border-radius: 20px;
+      background-color: #a756a7;
+      padding: 10px;
+      transition: background-color 0.5s; }
+    .menuredes2 .instagram:hover {
+      background-color: #752175; }
+    .menuredes2 a .twitter {
+      color: white;
+      border-radius: 20px;
+      background-color: #248cd1;
+      padding: 10px;
+      transition: background-color 0.5s; }
+    .menuredes2 .twitter:hover {
+      background-color: #185781; }
+    .menuredes2 a .whatsapp {
+      color: white;
+      border-radius: 20px;
+      background-color: #46b462;
+      padding: 10px;
+      transition: background-color 0.5s; }
+    .menuredes2 .whatsapp:hover {
+      background-color: #0e7224; }
+    .menuredes2 a .email {
+      color: white;
+      border-radius: 20px;
+      background-color: #dd4c4c;
+      padding: 10px;
+      transition: background-color 0.5s; }
+    .menuredes2 .email:hover {
+      background-color: #a81111; } }

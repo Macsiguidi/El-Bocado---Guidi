@@ -4,7 +4,32 @@
     flex-wrap: wrap;
     justify-content: flex-end;
 }
+.menuredes{
+    @extend .menunav
+}
 .menuredes2{
     @extend .menunav;
     justify-content: center;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px){
+    .menunavmob{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menuredesmob{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center
+        
+    }
+    .menuredesmob2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

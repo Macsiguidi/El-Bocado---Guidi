@@ -2,38 +2,347 @@
 @import "flex";
 
 .header{ 
-    background-image: url(/assents/img/elruso.jpeg);
+    background-image: url(/assents/img/elbocadogarras2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 400px;
     a img{
-        width: 200px;
-        margin-left: 60px;
+        width: 150px;
+        margin-left: 150px;
+        margin-top: 10px;
     }
 }
-
-.nav{
-    background-color: rgb(48, 138, 108);
-    padding-top: 10px;
-}
-.menunav{
+.menuredes{
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 110px;
     li{
         list-style: none;
         margin-right: 20px;
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 10px;
-        
+    }
+    
+    a .instagram{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(167, 86, 167);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .instagram:hover{
+        background-color: rgb(117, 33, 117);
+    }
+    a .twitter{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(36, 140, 209);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .twitter:hover{
+        background-color: rgb(24, 87, 129);
+    }
+    a .whatsapp{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(70, 180, 98);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .whatsapp:hover{
+        background-color: rgb(14, 114, 36);
+    }
+    a .email{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(221, 76, 76);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .email:hover{
+        background-color:rgb(168, 17, 17) ;
+    }
+
+
+}
+
+.nav{
+    background-color: rgb(55, 126, 136);
+    padding-top: 10px;
+
+   .menunav{
+       margin-top: 0px;
+       margin-right: 120px;
+
+    li{
+        list-style: none;
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    
         a{
             text-decoration: none;
             color: white;
+            font-family: 'Readex Pro', sans-serif;
+            .carrito{
+                border-radius: 20px;
+                background-color: rgb(0, 0, 0);
+                padding: 10px;
+                transition: background-color 0.5s;
+                margin-top: -8px;
+            }
+            .carrito:hover{
+                background-color: rgb(119, 119, 119);
+            }
         }
-  
+    }
+   }
 }
+.main{
+    .texto1{
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Readex Pro', sans-serif;
+    }
+    .boximagen img{
+        width: 600px;
+        height: 600px;
+        margin-left: 90px;
+      
+    }
+    .boximagen2 img{
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+
+.footer{
+    background-color:rgb(48, 138, 108);
+}
+.logo2{
+    width: 150px;  
+    margin-left: 560px;
 }
 
 .menuredes2{
+    list-style: none;
+    margin-top: 20px;
     li{
-        margin: 20px;
+        list-style: none;
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
+    
+    a .instagram{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(167, 86, 167);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .instagram:hover{
+        background-color: rgb(117, 33, 117);
+    }
+    a .twitter{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(36, 140, 209);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .twitter:hover{
+        background-color: rgb(24, 87, 129);
+    }
+    a .whatsapp{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(70, 180, 98);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .whatsapp:hover{
+        background-color: rgb(14, 114, 36);
+    }
+    a .email{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(221, 76, 76);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .email:hover{
+        background-color:rgb(168, 17, 17) ;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px){
+    .header{ 
+        background-image: url(/assents/img/elruso.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        a img{
+            width: 100px;
+            margin-left: 125px;
+        }
+}
+.menuredes{
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px;
+    li{
+        list-style: none;
+        margin-right: 30px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    a .instagram{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(167, 86, 167);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .instagram:hover{
+        background-color: rgb(117, 33, 117);
+    }
+    a .twitter{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(36, 140, 209);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .twitter:hover{
+        background-color: rgb(24, 87, 129);
+    }
+    a .whatsapp{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(70, 180, 98);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .whatsapp:hover{
+        background-color: rgb(14, 114, 36);
+    }
+    a .email{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(221, 76, 76);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .email:hover{
+        background-color:rgb(168, 17, 17) ;
+    }
+
+
+}
+.nav{
+    background-color: rgb(48, 138, 108);
+    padding-top: 10px;
+
+   .menunav{
+       margin-top: 0px;
+
+    li{
+        list-style: none;
+        margin-right: 20px;
+        font-size: 10px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    
+        a{
+            text-decoration: none;
+            color: white;
+            .carrito{
+                border-radius: 20px;
+                background-color: rgb(0, 0, 0);
+                padding: 10px;
+                transition: background-color 0.5s;
+                margin-top: -8px;
+            }
+            .carrito:hover{
+                background-color: rgb(119, 119, 119);
+            }
+        }
+    }
+   }
+}
+.footer{
+    background-color:rgb(48, 138, 108);
+}
+.logo2{
+    width: 100px;
+    margin-left: 125px;
+    margin-top: 10px;  
+}
+
+.menuredes2{
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px;
+    li{
+        list-style: none;
+        margin-right: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    a .instagram{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(167, 86, 167);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .instagram:hover{
+        background-color: rgb(117, 33, 117);
+    }
+    a .twitter{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(36, 140, 209);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .twitter:hover{
+        background-color: rgb(24, 87, 129);
+    }
+    a .whatsapp{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(70, 180, 98);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .whatsapp:hover{
+        background-color: rgb(14, 114, 36);
+    }
+    a .email{
+        color: white;
+        border-radius: 20px;
+        background-color: rgb(221, 76, 76);
+        padding: 10px;
+        transition: background-color 0.5s;
+    }
+    .email:hover{
+        background-color:rgb(168, 17, 17) ;
+    }
+
+}
+
 }
