@@ -49,7 +49,19 @@
   .header {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto; } }
+    grid-template-rows: auto; }
+  .menunav li, .menuredes li, .menuredes2 li {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto; }
+  .boximagen {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto; }
+    .boximagen .boximagen2 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto; } }
 
 .menunav, .menuredes, .menuredes2 {
   display: flex;
@@ -91,7 +103,7 @@
 .menuredes {
   list-style: none;
   margin-top: 30px;
-  margin-right: 110px; }
+  margin-right: 60px; }
   .menuredes li {
     list-style: none;
     margin-right: 20px;
@@ -136,10 +148,10 @@
   padding-top: 10px; }
   .nav .menunav, .nav .menuredes, .nav .menuredes2 {
     margin-top: 0px;
-    margin-right: 120px; }
+    margin-right: 50px; }
     .nav .menunav li, .nav .menuredes li, .nav .menuredes2 li {
       list-style: none;
-      margin-right: 20px;
+      margin-right: 40px;
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 10px; }
@@ -162,13 +174,14 @@
   font-family: 'Readex Pro', sans-serif; }
 
 .main .boximagen img {
-  width: 600px;
+  width: 900px;
   height: 600px;
-  margin-left: 90px; }
+  margin-left: 0px; }
 
 .main .boximagen2 img {
   width: 400px;
-  height: 300px; }
+  height: 300px;
+  margin-left: 200px; }
 
 .footer {
   background-color: #308a6c; }
@@ -274,7 +287,8 @@
     background-color: #308a6c;
     padding-top: 10px; }
     .nav .menunav, .nav .menuredes, .nav .menuredes2 {
-      margin-top: 0px; }
+      margin-top: 0px;
+      text-align: center; }
       .nav .menunav li, .nav .menuredes li, .nav .menuredes2 li {
         list-style: none;
         margin-right: 20px;
@@ -289,9 +303,20 @@
             background-color: black;
             padding: 10px;
             transition: background-color 0.5s;
-            margin-top: -8px; }
+            margin-top: 3px; }
           .nav .menunav li a .carrito:hover, .nav .menuredes li a .carrito:hover, .nav .menuredes2 li a .carrito:hover {
             background-color: #777777; }
+  .main .texto1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Readex Pro', sans-serif; }
+  .main .boximagen img {
+    width: 340px;
+    height: 300px;
+    margin-left: 0px; }
+  .main .boximagen2 img {
+    width: 170px;
+    height: 200px; }
   .footer {
     background-color: #308a6c; }
   .logo2 {
