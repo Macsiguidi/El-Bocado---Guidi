@@ -80,9 +80,8 @@
     li{
         list-style: none;
         margin-right: 40px;
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
+        font-size: 15px;
+        margin-bottom: 6px;
     
         a{
             text-decoration: none;
@@ -90,13 +89,8 @@
             font-family: 'Readex Pro', sans-serif;
             .carrito{
                 border-radius: 20px;
-                background-color: rgb(0, 0, 0);
                 padding: 10px;
-                transition: background-color 0.5s;
                 margin-top: -8px;
-            }
-            .carrito:hover{
-                background-color: rgb(119, 119, 119);
             }
         }
     }
@@ -109,15 +103,15 @@
         font-family: 'Readex Pro', sans-serif;
     }
     .boximagen img{
-        width: 900px;
+        width: 700px;
         height: 600px;
         margin-left: 0px;
       
     }
     .boximagen2 img{
-        width: 400px;
+        width: 405px;
         height: 300px;
-        margin-left: 200px;
+        margin-left: 150px;
     }
     .box{
         margin-top: 10px;
@@ -166,11 +160,12 @@
 
 
 .footer{
-    background-color:rgb(48, 138, 108);
+    background-color:rgb(55, 126, 136);
 }
 .logo2{
     width: 150px;  
-    margin-left: 560px;
+    margin-left: 490px;
+    margin-top: 10px;
 }
 
 .menuredes2{
@@ -236,6 +231,10 @@
 }
 
 /*Productos css*/
+.prod{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .imgprod{
     width: 250px;
     margin-left: 5px;
@@ -254,7 +253,7 @@
 
 }
 .bocado{
-    width: 250px;
+    width: 200px;
     height: 300px;
     margin: 5px;
 }
@@ -264,6 +263,15 @@
         width: 600px;
         height: 500px;
     }
+}
+/*Contacto Css*/
+.maincont{
+    margin-bottom: 10px;
+}
+.logocont2{
+     width: 150px;
+     margin-top: 10px;
+     margin-left: 475px;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 768px){
@@ -333,18 +341,18 @@
 
 }
 .nav{
-    background-color: rgb(48, 138, 108);
+    background-color: rgb(55, 126, 136);
     padding-top: 10px;
 
    .menunav{
        margin-top: 0px;
        text-align: center;
+       padding-bottom: 10px;
 
     li{
         list-style: none;
         margin-right: 20px;
-        font-size: 10px;
-        font-weight: bold;
+        font-size: 15px;
         margin-bottom: 10px;
     
         a{
@@ -371,20 +379,62 @@
         font-family: 'Readex Pro', sans-serif;
     }
     .boximagen img{
-        width: 340px;
+        width: 330px;
         height: 300px;
         margin-left: 0px;
       
     }
     .boximagen2 img{
-        width: 170px;
+        width: 165px;
         height: 200px;
         
+    }
+    .box{
+        margin-top: 10px;
+        .box1{
+            padding: 100px;
+            text-align: center;
+            background-image: url(/assents/img/elbocado.jpeg);
+            transition: background-image 1s;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            a{
+                text-decoration: none;
+                font-size: 30px;
+                color: white;
+                font-family:'Readex Pro', sans-serif; ;
+            }
+        }
+        .box1:hover{
+            background-image: url(/assents/img/puertaelbocado.jpg);
+
+        }
+        .box2{
+            padding: 100px;
+            text-align: center;
+            background-image: url(/assents/img/garrapiñadas.png);
+            transition: background-image 1s;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            a{
+                text-decoration: none;
+                font-size: 30px;
+                color: white;
+                font-family:'Readex Pro', sans-serif; ;
+            }
+        }
+        .box2:hover{
+            background-image: url(/assents/img/bocado2.jpg);
+
+        }
+
     }
 
 }
 .footer{
-    background-color:rgb(48, 138, 108);
+    background-color:rgb(55, 126, 136);
 }
 .logo2{
     width: 100px;
@@ -457,7 +507,7 @@
 }
 .logoprod2{
     width: 100px;
-    margin-left: 10px;
+    margin-left: 110px;
     margin-top: 10px; 
 
 }
@@ -479,6 +529,15 @@
         width: 300px;
         height: 250px;
     }
+}
+/*Contacto Css*/
+.maincont{
+    margin-bottom: 10px;
+}
+.logocont2{
+    width: 100px;
+    margin-left: 110px;
+    margin-top: 10px; 
 }
 
 }

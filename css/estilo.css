@@ -73,6 +73,10 @@
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: auto; }
+  .box {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto; }
   .imgnosotros {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -167,21 +171,16 @@
     .nav .menunav li, .nav .menuredes li, .nav .menuredes2 li {
       list-style: none;
       margin-right: 40px;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px; }
+      font-size: 15px;
+      margin-bottom: 6px; }
       .nav .menunav li a, .nav .menuredes li a, .nav .menuredes2 li a {
         text-decoration: none;
         color: white;
         font-family: 'Readex Pro', sans-serif; }
         .nav .menunav li a .carrito, .nav .menuredes li a .carrito, .nav .menuredes2 li a .carrito {
           border-radius: 20px;
-          background-color: black;
           padding: 10px;
-          transition: background-color 0.5s;
           margin-top: -8px; }
-        .nav .menunav li a .carrito:hover, .nav .menuredes li a .carrito:hover, .nav .menuredes2 li a .carrito:hover {
-          background-color: #777777; }
 
 .main .texto1 {
   text-align: center;
@@ -189,14 +188,14 @@
   font-family: 'Readex Pro', sans-serif; }
 
 .main .boximagen img {
-  width: 900px;
+  width: 700px;
   height: 600px;
   margin-left: 0px; }
 
 .main .boximagen2 img {
-  width: 400px;
+  width: 405px;
   height: 300px;
-  margin-left: 200px; }
+  margin-left: 150px; }
 
 .main .box {
   margin-top: 10px; }
@@ -232,11 +231,12 @@
     background-image: url(/assents/img/bocado2.jpg); }
 
 .footer {
-  background-color: #308a6c; }
+  background-color: #377e88; }
 
 .logo2 {
   width: 150px;
-  margin-left: 560px; }
+  margin-left: 490px;
+  margin-top: 10px; }
 
 .menuredes2 {
   list-style: none;
@@ -288,6 +288,10 @@
     margin-bottom: 10px; }
 
 /*Productos css*/
+.prod {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .imgprod {
   width: 250px;
   margin-left: 5px; }
@@ -302,7 +306,7 @@
   margin: 8px; }
 
 .bocado {
-  width: 250px;
+  width: 200px;
   height: 300px;
   margin: 5px; }
 
@@ -311,6 +315,15 @@
   .mapa iframe {
     width: 600px;
     height: 500px; }
+
+/*Contacto Css*/
+.maincont {
+  margin-bottom: 10px; }
+
+.logocont2 {
+  width: 150px;
+  margin-top: 10px;
+  margin-left: 475px; }
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
   .header, .header2 {
@@ -364,16 +377,16 @@
     .menuredes .email:hover {
       background-color: #a81111; }
   .nav {
-    background-color: #308a6c;
+    background-color: #377e88;
     padding-top: 10px; }
     .nav .menunav, .nav .menuredes, .nav .menuredes2 {
       margin-top: 0px;
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 10px; }
       .nav .menunav li, .nav .menuredes li, .nav .menuredes2 li {
         list-style: none;
         margin-right: 20px;
-        font-size: 10px;
-        font-weight: bold;
+        font-size: 15px;
         margin-bottom: 10px; }
         .nav .menunav li a, .nav .menuredes li a, .nav .menuredes2 li a {
           text-decoration: none;
@@ -391,14 +404,46 @@
     font-size: 30px;
     font-family: 'Readex Pro', sans-serif; }
   .main .boximagen img {
-    width: 340px;
+    width: 330px;
     height: 300px;
     margin-left: 0px; }
   .main .boximagen2 img {
-    width: 170px;
+    width: 165px;
     height: 200px; }
+  .main .box {
+    margin-top: 10px; }
+    .main .box .box1 {
+      padding: 100px;
+      text-align: center;
+      background-image: url(/assents/img/elbocado.jpeg);
+      transition: background-image 1s;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .main .box .box1 a {
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        font-family: 'Readex Pro', sans-serif; }
+    .main .box .box1:hover {
+      background-image: url(/assents/img/puertaelbocado.jpg); }
+    .main .box .box2 {
+      padding: 100px;
+      text-align: center;
+      background-image: url(/assents/img/garrapiñadas.png);
+      transition: background-image 1s;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .main .box .box2 a {
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        font-family: 'Readex Pro', sans-serif; }
+    .main .box .box2:hover {
+      background-image: url(/assents/img/bocado2.jpg); }
   .footer {
-    background-color: #308a6c; }
+    background-color: #377e88; }
   .logo2 {
     width: 100px;
     margin-left: 125px;
@@ -454,7 +499,7 @@
       margin-left: 2px; }
   .logoprod2 {
     width: 100px;
-    margin-left: 10px;
+    margin-left: 110px;
     margin-top: 10px; }
   /*Nosotros Css*/
   .texto-Nos-1 {
@@ -468,4 +513,11 @@
     margin: 8px; }
     .mapa iframe {
       width: 300px;
-      height: 250px; } }
+      height: 250px; }
+  /*Contacto Css*/
+  .maincont {
+    margin-bottom: 10px; }
+  .logocont2 {
+    width: 100px;
+    margin-left: 110px;
+    margin-top: 10px; } }

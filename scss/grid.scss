@@ -98,6 +98,13 @@
             grid-template-rows: auto;
         }
  }
+ .box{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+
  .imgnosotros{
     display: grid;
     grid-template-columns: 50% 50%;
