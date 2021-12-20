@@ -1,7 +1,7 @@
 @import "grid";
 @import "flex";
 
-.header{ 
+.header, .header2{ 
     background-image: url(/assents/img/elbocadogarras2.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -119,6 +119,48 @@
         height: 300px;
         margin-left: 200px;
     }
+    .box{
+        margin-top: 10px;
+        .box1{
+            padding: 200px;
+            text-align: center;
+            background-image: url(/assents/img/elbocado.jpeg);
+            transition: background-image 1s;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            a{
+                text-decoration: none;
+                font-size: 50px;
+                color: white;
+                font-family:'Readex Pro', sans-serif; ;
+            }
+        }
+        .box1:hover{
+            background-image: url(/assents/img/puertaelbocado.jpg);
+
+        }
+        .box2{
+            padding: 200px;
+            text-align: center;
+            background-image: url(/assents/img/garrapiñadas.png);
+            transition: background-image 1s;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            a{
+                text-decoration: none;
+                font-size: 50px;
+                color: white;
+                font-family:'Readex Pro', sans-serif; ;
+            }
+        }
+        .box2:hover{
+            background-image: url(/assents/img/bocado2.jpg);
+
+        }
+
+    }
 
 }
 
@@ -184,9 +226,48 @@
     }
 
 }
+.ubicacion{
+    text-align: center;
+    font-size: 20px;
+    a{
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+}
+
+/*Productos css*/
+.imgprod{
+    width: 250px;
+    margin-left: 5px;
+}
+
+.logoprod2{
+    margin-top: 10px;
+        width: 150px;  
+        margin-left: 480px;
+
+}
+
+/*Nosotros Css*/
+.texto-Nos-1{
+    margin: 8px;
+
+}
+.bocado{
+    width: 250px;
+    height: 300px;
+    margin: 5px;
+}
+.mapa{
+    margin:8px;
+    iframe{
+        width: 600px;
+        height: 500px;
+    }
+}
 
 @media only screen and (min-width: 360px) and (max-width: 768px){
-    .header{ 
+    .header, .header2{ 
         background-image: url(/assents/img/elruso.jpeg);
         background-position: center;
         background-repeat: no-repeat;
@@ -364,6 +445,40 @@
         background-color:rgb(168, 17, 17) ;
     }
 
+}
+/*Productos css*/
+.prod{
+    text-align: center;
+    font-size: 15px;
+.imgprod{
+    width: 100px;
+    margin-left: 2px;
+}
+}
+.logoprod2{
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px; 
+
+}
+/*Nosotros Css*/
+.texto-Nos-1{
+    margin: 8px;
+    font-size: 20px;
+
+}
+.bocado{
+    width: 100px;
+    height: 150px;
+    margin: 3px;
+}
+
+.mapa{
+    margin:8px;
+    iframe{
+        width: 300px;
+        height: 250px;
+    }
 }
 
 }

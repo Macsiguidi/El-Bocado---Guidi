@@ -37,6 +37,20 @@
        }
 }
 
+.box{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+
+
+.imgnosotros{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+}
+
 @media only screen and (min-width: 360px) and (max-width: 768px){
     .gridcontainerpadre{
         display: grid;
@@ -84,4 +98,9 @@
             grid-template-rows: auto;
         }
  }
+ .imgnosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
 }

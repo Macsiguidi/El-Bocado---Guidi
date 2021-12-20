@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .gridcontainerpadre {
   display: grid;
   grid-template-areas: "header header" "nav nav" "main main" "footer footer";
@@ -31,6 +32,16 @@
     grid-template-columns: 100%;
     grid-template-rows: auto; }
 
+.box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto; }
+
+.imgnosotros {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto; }
+
 @media only screen and (min-width: 360px) and (max-width: 768px) {
   .gridcontainerpadre {
     display: grid;
@@ -61,7 +72,11 @@
     .boximagen .boximagen2 {
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-rows: auto; } }
+      grid-template-rows: auto; }
+  .imgnosotros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto; } }
 
 .menunav, .menuredes, .menuredes2 {
   display: flex;
@@ -89,13 +104,13 @@
     flex-wrap: wrap;
     justify-content: center; } }
 
-.header {
+.header, .header2 {
   background-image: url(/assents/img/elbocadogarras2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 400px; }
-  .header a img {
+  .header a img, .header2 a img {
     width: 150px;
     margin-left: 150px;
     margin-top: 10px; }
@@ -183,6 +198,39 @@
   height: 300px;
   margin-left: 200px; }
 
+.main .box {
+  margin-top: 10px; }
+  .main .box .box1 {
+    padding: 200px;
+    text-align: center;
+    background-image: url(/assents/img/elbocado.jpeg);
+    transition: background-image 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .main .box .box1 a {
+      text-decoration: none;
+      font-size: 50px;
+      color: white;
+      font-family: 'Readex Pro', sans-serif; }
+  .main .box .box1:hover {
+    background-image: url(/assents/img/puertaelbocado.jpg); }
+  .main .box .box2 {
+    padding: 200px;
+    text-align: center;
+    background-image: url(/assents/img/garrapiñadas.png);
+    transition: background-image 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .main .box .box2 a {
+      text-decoration: none;
+      font-size: 50px;
+      color: white;
+      font-family: 'Readex Pro', sans-serif; }
+  .main .box .box2:hover {
+    background-image: url(/assents/img/bocado2.jpg); }
+
 .footer {
   background-color: #308a6c; }
 
@@ -232,13 +280,45 @@
   .menuredes2 .email:hover {
     background-color: #a81111; }
 
+.ubicacion {
+  text-align: center;
+  font-size: 20px; }
+  .ubicacion a {
+    text-decoration: none;
+    margin-bottom: 10px; }
+
+/*Productos css*/
+.imgprod {
+  width: 250px;
+  margin-left: 5px; }
+
+.logoprod2 {
+  margin-top: 10px;
+  width: 150px;
+  margin-left: 480px; }
+
+/*Nosotros Css*/
+.texto-Nos-1 {
+  margin: 8px; }
+
+.bocado {
+  width: 250px;
+  height: 300px;
+  margin: 5px; }
+
+.mapa {
+  margin: 8px; }
+  .mapa iframe {
+    width: 600px;
+    height: 500px; }
+
 @media only screen and (min-width: 360px) and (max-width: 768px) {
-  .header {
+  .header, .header2 {
     background-image: url(/assents/img/elruso.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
-    .header a img {
+    .header a img, .header2 a img {
       width: 100px;
       margin-left: 125px; }
   .menuredes {
@@ -364,4 +444,28 @@
       padding: 10px;
       transition: background-color 0.5s; }
     .menuredes2 .email:hover {
-      background-color: #a81111; } }
+      background-color: #a81111; }
+  /*Productos css*/
+  .prod {
+    text-align: center;
+    font-size: 15px; }
+    .prod .imgprod {
+      width: 100px;
+      margin-left: 2px; }
+  .logoprod2 {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px; }
+  /*Nosotros Css*/
+  .texto-Nos-1 {
+    margin: 8px;
+    font-size: 20px; }
+  .bocado {
+    width: 100px;
+    height: 150px;
+    margin: 3px; }
+  .mapa {
+    margin: 8px; }
+    .mapa iframe {
+      width: 300px;
+      height: 250px; } }
